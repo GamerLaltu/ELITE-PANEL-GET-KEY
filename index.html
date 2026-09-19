@@ -1779,7 +1779,7 @@ async function init(){
     db = getDatabase(app);
     appReady = true;
   } catch(err){
-    console.error("[FIXAMODS]", err);
+    console.error("[ELITE CHEATS]", err);
     setStatus("Offline", "red");
     setCtaError();
     return;
@@ -1885,7 +1885,7 @@ async function onGenerate(e){
     }, 7000);
 
   } catch(err){
-    console.error("[FIXAMODS]", err);
+    console.error("[ELITE CHEATS]", err);
     setStatus("Error", "red");
     setEyebrow("Something went wrong");
     Sound.error();
@@ -1924,7 +1924,7 @@ async function onShare(){
   const key = ($("keyText").textContent || "").trim();
   if(!key || key.includes("—")){ showToast("No key to share", "warn"); return; }
   Sound.click();
-  const sd = { title: "FIXAMODS Key", text: `FIXAMODS key: ${key}`, url: window.location.href };
+  const sd = { title: "ELITE CHEATS KEY", text: `ELITE CHEATS KEY: ${key}`, url: window.location.href };
   try {
     if(navigator.share) await navigator.share(sd);
     else {
